@@ -1,0 +1,20 @@
+{
+    "editor.rulers": [
+        79
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "workbench.sideBar.location": "right",
+    "security.workspace.trust.untrustedFiles": "open",
+    "tabnine.experimentalAutoImports": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderWhitespace": "trailing",
+    "trailing-spaces.trimOnSave": true,
+    "editor.trimAutoWhitespace": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "git.autofetch": true,
+    "editor.inlineSuggest.enabled": true,
+    "cmake.configureOnOpen": false,
+    "files.autoSave": "onWindowChange"
+}
