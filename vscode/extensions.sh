@@ -1,6 +1,3 @@
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-python.isort
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension jeff-hykin.better-cpp-syntax
 code --install-extension nicolaspolomack.epitech-c-cpp-headers
