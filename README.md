@@ -31,6 +31,8 @@ Workshop d'introduction au workflow sous Windows 11 - WSL2
 
 ## Configuration de l'environnement de travail
 
+> **Note** : Vous pouvez (devez ?) installer toutes ces applications comme sur un Windows standard
+
 1. Installer [Visual Studio Code](https://code.visualstudio.com/)
 2. Installer [Windows Terminal](https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
 3. Installer [Git](https://git-scm.com/download/win)
@@ -50,11 +52,13 @@ Workshop d'introduction au workflow sous Windows 11 - WSL2
 11. Installer les essentiels pour faire du dev `sudo apt install build-essential gdb gdbserver valgrind clang clang-format clang-tidy clang-tools clangd cmake make git curl wget`
 12. Optionel : installer zsh `sudo apt install zsh` et  [Oh My Zsh](https://ohmyz.sh/) pour avoir un shell plus sympa
 
-GG à vous, normalement vous avez un wsl2 fonctionnel avec un environnement de dev C/C++ complet
-
 > **Note** : Je vous recommande fortement de faire un raccourci vers le dossier home de votre WSL dans l'explorateur de fichiers. Le dossier est normalement présent en tant que lecteur réseau `Ubuntu` sous le dossier `Linux`. Vous pouvez aussi utiliser le raccourci `\\wsl$\Ubuntu\home\*nom d'utilisateur*` pour accéder au dossier home de votre WSL
 
+GG à vous, normalement vous avez un wsl2 fonctionnel avec un environnement de dev C/C++ complet
+
 ## Configuration de Git
+
+> **Note** : Il est également possible d'installer GitHub Desktop pour Windows 11, mais la gestion de vos projets linux se fera dans le WSL
 
 1. Configurer git `git config --global user.name "John Doe"`
 2. Configurer git `git config --global user.email "example.random@email.com"`
@@ -79,7 +83,13 @@ GG à vous, normalement vous avez un wsl2 fonctionnel avec un environnement de d
 #
 
 ### Et voilà, vous êtes prêts à travailler sous Windows 11 !
+
 Normalement, vous devriez avoir un environnement de travail complet avec un shell sympa, un éditeur de texte, un terminal, un client git et un environnement de dev C/C++ complet. Vous pouvez maintenant cloner vos projets et commencer à bosser.
+
+Tout votre système est utilisable comme un windows normal. La partie WSL (linux) est accessible depuis le Windows Terminal, et supporte le développement et l'ouverture de fenêtres graphiques. L'installation d'applications avec un GUI est également possible, mais je vous conseille de les installer au maximum sur la partie Windows pour maximiser les performances.
+
+Quelques bidouilleurs sont parvenus à installer un desktop environment complet sur WSL, mais je ne vous conseille pas de le faire. C'est une solution de contournement qui ne fonctionne pas très bien et qui est très lourde en ressources. Vous pouvez essayer si vous voulez, mais je vous conseille de rester sur le terminal et VSCode.
+
 Si vous avez des questions, n'hésitez pas à me solliciter !
 
 J'hésite également à faire un workshop sur la configuration des outils JetBrains (CLion, PyCharm, etc.) sous Windows 11, n'hésitez pas à me dire si ça vous intéresse.
