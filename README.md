@@ -11,6 +11,8 @@ Workshop d'introduction au workflow sous Windows 11 - WSL2
 
 ## Installation
 
+> **Note:** Si vous avez déjà Windows 10, vous pouvez normalement effectuer la mise à jour directement depuis Windows Update, et ignorer toutes les étapes d'installation manuelle.
+
 1. Télécharger l'[outil de création de média](https://www.microsoft.com/fr-fr/software-download/windows11) et lancer l'installation
 2. Lire ce qu'il se passe, éviter de wipe le disque dur
 3. Profitez-en pour sauvegarder vos données utiles (clés SSH par exemple)
@@ -56,6 +58,14 @@ Workshop d'introduction au workflow sous Windows 11 - WSL2
 
 GG à vous, normalement vous avez un wsl2 fonctionnel avec un environnement de dev C/C++ complet
 
+## Installation de la (C)SFML
+
+Le système installé sur votre WSL étant un Ubuntu, il vous suffit juste d'éxecuter la commande standard d'installation de la librairie
+
+`sudo apt install libsfml-dev`
+
+Le script d'installation de la CSFML fourni par Epitech devrait fonctionner sans soucis après l'installation de la librairie.
+
 ## Configuration de Git
 
 > **Note** : Il est également possible d'installer GitHub Desktop pour Windows 11, mais la gestion de vos projets linux se fera dans le WSL
@@ -69,6 +79,8 @@ GG à vous, normalement vous avez un wsl2 fonctionnel avec un environnement de d
 7. Copier la clé SSH `clip < ~/.ssh/id_rsa.pub`
 8. Ajouter la clé SSH à votre compte Github (Profile > Settings > SSH and GPG keys > New SSH key)
 9. Essayer de cloner un repo avec SSH pour vérifier que tout fonctionne
+
+Cette installation de Git fonctionnera exactement comme sur un Linux standard, vous pouvez donc utiliser les mêmes commandes que sur le fantastique Fedora installé sur vos PC.
 
 ## Configuration de VSCode
 
